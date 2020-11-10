@@ -26,3 +26,4 @@ classifier.fit(x_train, y_train)
 # PREDICTING WITH TEST DATA
 y_pred = classifier.predict(x_test)
 print(y_pred)
+
