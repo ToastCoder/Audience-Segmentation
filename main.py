@@ -16,7 +16,16 @@ from sklearn.linear_model import LogisticRegression
 
 # DATA PREPROCESSING
 data = pd.read_csv("data/custdata2.csv")
-x = data.iloc[:,[3,9]].values
+x = data.iloc[:,3:9].values
 y = data.iloc[:,-1].values
 
-print(data)
+sc = StandardScaler()
+x = sc.fit_transform(x)
+
+classifier = LogisticRegression(random_state = 0)
+classifier.fit(x,y)
+s = np.array([1,0,1,1,0,1,0])
+s = s.reshape(len(s),1)
+
+res = classifier.predict(sc.fit_transform(s))
+print(res)
