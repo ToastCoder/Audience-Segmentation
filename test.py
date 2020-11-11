@@ -29,8 +29,6 @@ for i in range(len(interests)):
     elif ch == "N" or "NO":
         user_interests.append(0)
 
-#user_interests = np.array(user_interests,dtype = int)
-#user_interests = user_interests.reshape(len(user_interests),1)
 categories = ["Young Adult","Engineering Student","Medical Student","Teacher","Mature (40+)","Travelophilic","Media Addicted"]
 res = log.predict([user_interests])
 print("The person may be a "+categories[int(res)]+" type of audience.")
