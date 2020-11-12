@@ -9,6 +9,8 @@ The code collects the interest of various people given either 1 or 0 (Yes or No)
 ### Developed by:
 [Vigneshwar Ravichandar](https://github.com/ToastCoder)
 
+[Moulishankar M R](https://github.com/Moulishankar10)
+
 ### Classes:
 
 1. Young adult ( if the value of 'res' in test.py is 'array([[0]])' )
