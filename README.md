@@ -13,17 +13,17 @@ The code collects the interest of various people given either 1 or 0 (Yes or No)
 
 1. Young adult ( if the value of 'res' in test.py is 'array([[0]])' )
 
-2. 1 - Engineering Student ( if the value of 'res' in test.py is 'array([[1]])' )
+2. Engineering Student ( if the value of 'res' in test.py is 'array([[1]])' )
 
-3. 2 - Medical Student ( if the value of 'res' in test.py is 'array([[2]])' )
+3. Medical Student ( if the value of 'res' in test.py is 'array([[2]])' )
 
-4. 3 - Teachers ( if the value of 'res' in test.py is 'array([[3]])' )
+4. Teachers ( if the value of 'res' in test.py is 'array([[3]])' )
 
-5. 4 - Adults ( if the value of 'res' in test.py is 'array([[4]])' )
+5. Adults ( if the value of 'res' in test.py is 'array([[4]])' )
 
-6. 5 - Travelling kinda person ( if the value of 'res' in test.py is 'array([[5]])' )
+6. Travelling kinda person ( if the value of 'res' in test.py is 'array([[5]])' )
 
-7. 6 - Media Freak ( if the value of 'res' in test.py is 'array([[6]])' )
+7. Media Freak ( if the value of 'res' in test.py is 'array([[6]])' )
 
 ### Features: 
 
