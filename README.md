@@ -65,7 +65,7 @@ There is a script autorun.sh for automating all the process.
 
 3. Enter password if asked.
 
-![shell1](https://github.com/ToastCoder/Audience-Segmentation-using-Logistic-Regression/blob/master/images/Screenshot%20from%202020-11-12%2016-53-10.png)
+![shell1](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/Screenshot%20from%202020-11-12%2016-53-10.png)
 
 4. This will install all the dependencies and runs the code in order.
 
@@ -73,11 +73,11 @@ There is a script autorun.sh for automating all the process.
 
 6. Press Y for visualizing the model's working. Else press N.
 
-![shell2](https://github.com/ToastCoder/Audience-Segmentation-using-Logistic-Regression/blob/master/images/Screenshot%20from%202020-11-12%2016-53-49.png)
+![shell2](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/Screenshot%20from%202020-11-12%2016-53-49.png)
 
 7. For classifying a particular data. Follow the wizard by either by pressing Y or N.
 
 8. The algorithm will classify the type of audience for the mentioned person. Enjoy!
 
-![shell3](https://github.com/ToastCoder/Audience-Segmentation-using-Logistic-Regression/blob/master/images/Screenshot%20from%202020-11-12%2016-54-27.png)
+![shell3](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/Screenshot%20from%202020-11-12%2016-54-27.png)
 
