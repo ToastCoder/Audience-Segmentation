@@ -1,4 +1,4 @@
-## Audience Segmentation using Logistic Regression
+## Audience Segmentation
 
 ### About:
 
