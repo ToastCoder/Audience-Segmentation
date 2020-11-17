@@ -33,3 +33,5 @@ categories = ["Young Adult","Engineering Student","Medical Student","Teacher","M
 res = log.predict([user_interests])
 print("The person may be a "+categories[int(res)]+" type of audience.")
 
+print(log.score(x,y))
+
