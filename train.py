@@ -12,7 +12,7 @@ from sklearn.linear_model import LogisticRegression
 import pickle
 
 # DATA PREPROCESSING
-data = pd.read_csv("data/custData.csv")
+data = pd.read_csv("data/custData2.csv")
 x = data.iloc[:,[4,5,6,7,8,9,10]].values
 y = data.iloc[:,-1].values
 
