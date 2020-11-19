@@ -12,8 +12,8 @@ from sklearn.linear_model import LogisticRegression
 import pickle
 
 # DATA PREPROCESSING
-data = pd.read_csv("data/custData.csv")
-x = data.iloc[:,[3,4,5,6,7,8,9]].values
+data = pd.read_csv("data/custData2.csv")
+x = data.iloc[:,[4,5,6,7,8,9,10]].values
 y = data.iloc[:,-1].values
 
 # OPENING AND DEFINING THE TRAINED MODEL
@@ -32,6 +32,4 @@ for i in range(len(interests)):
 categories = ["Young Adult","Engineering Student","Medical Student","Teacher","Mature (40+)","Travelophilic","Media Addicted"]
 res = log.predict([user_interests])
 print("The person may be a "+categories[int(res)]+" type of audience.")
-
-print(log.score(x,y))
 
