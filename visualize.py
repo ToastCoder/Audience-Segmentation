@@ -38,3 +38,6 @@ y_pred = log.predict(x_test)
 cm = confusion_matrix(y_test, y_pred)
 print(cm)
 
+# MEASURING THE ACCURACY OF THE MODEL
+print(f"Estimated accuracy of the model is {log.score(x_test,y_pred)*100}%")
+
