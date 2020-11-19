@@ -13,7 +13,7 @@ import pickle
 
 # DATA PREPROCESSING
 data = pd.read_csv("data/custData.csv")
-x = data.iloc[:,[3,4,5,6,7,8,9]].values
+x = data.iloc[:,[4,5,6,7,8,9,10]].values
 y = data.iloc[:,-1].values
 
 # INITIALIZING AND TRAINING THE MODEL WITH THE SEGMENTED DATA
