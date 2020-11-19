@@ -15,8 +15,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 
 # DATA PREPROCESSING
-data = pd.read_csv("data/custData.csv")
-x = data.iloc[:,[3,4,5,6,7,8,9]].values
+data = pd.read_csv("data/custData2.csv")
+x = data.iloc[:,[4,5,6,7,8,9,10]].values
 y = data.iloc[:,-1].values
 
 # SPLITTING THE DATA INTO TEST DATA AND TRAIN DATA
