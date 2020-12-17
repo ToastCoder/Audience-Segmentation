@@ -4,7 +4,7 @@
 
 A basic replica of youtube algorithm! Classifies the viewers into several groups based on their interests. Implemented with TensorFlow
 
-The code collects the interest of various people given either 1 or 0 (Yes or No) in the dataset and gets the corresponding labels and classifies the type of audience for user defined person in train.py. Useful for classifying audience based on their interests and personalizing ads for each type of audience type.
+The code collects the amount of videos watched in particular category by any person from the dataset and gets the corresponding labels and classifies the type of audience for user defined person in train.py. Useful for classifying audience based on their interests and personalizing ads for each type of audience type.
 
 ### Developed by:
 [Vigneshwar Ravichandar](https://github.com/ToastCoder)
