@@ -17,7 +17,7 @@ The code collects the interest of various people given either 1 or 0 (Yes or No)
 
 2. Engineering Student ( if the value of 'res' in test.py is '[1]' )
 
-3. Medical Student ( if the value of 'res' in test.py is 'array([[2]])' )
+3. Medical Student ( if the value of 'res' in test.py is '[2]' )
 
 4. Teachers ( if the value of 'res' in test.py is '[3]' )
 
@@ -61,21 +61,21 @@ There is a script autorun.sh for automating all the process.
 
 2. Press Y for executing the script.
 
-3. Enter password if asked.
+![shell1](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image1.png)
 
-![shell1](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/Screenshot%20from%202020-11-12%2016-53-10.png)
+3. Enter password if asked.
 
 4. This will install all the dependencies and runs the code in order.
 
 5. Press Y for retraining the model. Else press N.
 
-6. Press Y for visualizing the model's working. Else press N.
+![shell2](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image2.png)
 
-![shell2](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/Screenshot%20from%202020-11-12%2016-53-49.png)
+7. For classifying a particular data. Follow the wizard by either by entering the user's number of watched videos per category.
 
-7. For classifying a particular data. Follow the wizard by either by pressing Y or N.
+![shell3](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image3.png)
 
 8. The algorithm will classify the type of audience for the mentioned person. Enjoy!
 
-![shell3](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/Screenshot%20from%202020-11-12%2016-54-27.png)
+![shell4](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image4.png)
 
