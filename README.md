@@ -71,7 +71,7 @@ There is a script autorun.sh for automating all the process.
 
 ![shell2](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image2.png)
 
-7. For classifying a particular data. Follow the wizard by either by entering the user's number of watched videos per category.
+7. For classifying a particular data. Follow the wizard by entering the user's number of watched videos per category.
 
 ![shell3](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image3.png)
 
