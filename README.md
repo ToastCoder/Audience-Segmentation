@@ -45,7 +45,7 @@ The code collects the interest of various people given either 1 or 0 (Yes or No)
 
 ### Execution Instructions:
 
-### Windows:
+### Windows without WSL:
 
 1. Install the required packages.
 
@@ -53,7 +53,7 @@ The code collects the interest of various people given either 1 or 0 (Yes or No)
 
 3. Execute test.py to test the model for executing the algorithm with user defined data.
 
-### MacOS / Linux:
+### Windows with WSL / MacOS / Linux:
 
 There is a script autorun.sh for automating all the process.
 
