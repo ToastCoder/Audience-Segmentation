@@ -16,7 +16,7 @@ from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.models import save_model
 
 # DATA SEGMENTATION
-data = pd.read_csv("data/custData2.csv")
+data = pd.read_csv("data/custData.csv")
 x = data.iloc[:,[4,5,6,7,8,9,10]].values
 y = data.iloc[:,11].values
 
