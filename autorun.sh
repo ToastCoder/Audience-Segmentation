@@ -22,7 +22,7 @@ then
     pip3 install numpy
     pip3 install pandas
     pip3 install sklearn
-    pip3 install pickle
+    pip3 install tensorflow
     pip3 install matplotlib
 
     echo "Do you want to retrain the model (Y/N): "
@@ -30,13 +30,6 @@ then
     if [[ $response2 -eq "y" || $response2 -eq "Y" ]]
     then
         python3 train.py
-    fi
-
-    echo "Do you want to see the data visualization, confusion matrix and other metrics? (Y/N): "
-    read response3
-    if [[ $response3 -eq "y" || $response3 -eq "Y" ]]
-    then
-        python3 visualize.py
     fi
     python3 test.py
 fi
