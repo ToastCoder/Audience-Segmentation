@@ -16,6 +16,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import tensorflow as tf
+import matplotlib.pyplot as plt
 
 print(f"TensorFlow version: {tf.__version__}")
 
@@ -55,7 +56,16 @@ callback = Callback()
 
 # TRAINING THE MODEL
 model.compile(loss = 'sparse_categorical_crossentropy' , optimizer = 'adam' , metrics = ['accuracy'] )
-model.fit(x_train, y_train, epochs = 20, batch_size = 2,callbacks = [callback])
+history = model.fit(x_train, y_train, epochs = 20, batch_size = 2,callbacks = [callback])
+
+# PLOTTING THE GRAPH FOR TRAIN-LOSS AND VALIDATION-LOSS
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'validation'], loc='upper left')
+plt.show()
 
 # CALCULATING THE ESTIMATED ACCURACY
 score = model.evaluate(x_val, y_val)
