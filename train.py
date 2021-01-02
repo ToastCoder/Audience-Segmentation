@@ -2,7 +2,7 @@
 
 # FILE NAME: train.py
 
-# DEVELOPED BY: Vigneshwar Ravichandar
+# DEVELOPED BY: Vigneshwar Ravichandar, Moulishankar M R
 
 # TOPICS: Multiclass Classification, Machine Learning, TensorFlow
 
@@ -56,20 +56,33 @@ callback = Callback()
 
 # TRAINING THE MODEL
 model.compile(loss = 'sparse_categorical_crossentropy' , optimizer = 'adam' , metrics = ['accuracy'] )
-history = model.fit(x_train, y_train, epochs = 20, batch_size = 2,callbacks = [callback])
+history = model.fit(x_train, y_train, epochs = 20, batch_size = 2, callbacks = [callback], validation_data = (x_val, y_val))
 
 # PLOTTING THE GRAPH FOR TRAIN-LOSS AND VALIDATION-LOSS
+plt.figure(0)
 plt.plot(history.history['loss'])
 plt.plot(history.history['val_loss'])
-plt.title('model loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'validation'], loc='upper left')
+plt.title('Loss Graph')
+plt.ylabel('Loss')
+plt.xlabel('Epoch')
+plt.legend(['Train Loss', 'Validation Loss'], loc='upper left')
 plt.show()
+plt.savefig('graphs/loss_graph.png')
 
-# CALCULATING THE ESTIMATED ACCURACY
+# PLOTTING THE GRAPH FOR TRAIN-ACCURACY AND VALIDATION-ACCURACY
+plt.figure(1)
+plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
+plt.title('Accuracy Graph')
+plt.ylabel('Accuracy')
+plt.xlabel('Epoch')
+plt.legend(['Train Accuracy', 'Validation Accuracy'], loc='upper left')
+plt.show()
+plt.savefig('graphs/acc_graph.png')
+
+# CALCULATING THE ACCURACY
 score = model.evaluate(x_val, y_val)
 print(f"Model Accuracy: {round(score[1]*100,4)}")
 
 # SAVING THE MODEL
-tf.keras.models.save_model(model,'./model/custDataModel')
+tf.keras.models.save_model(model,MODEL_PATH)

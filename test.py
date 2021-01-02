@@ -1,23 +1,36 @@
-#  AUDIENCE SEGMENTATION
-# FILE NAME: test.py 
+# AUDIENCE SEGMENTATION
 
-# DEVELOPED BY:
-# VIGNESHWAR RAVICHANDAR
-# MOULISHANKAR M R 
+# FILE NAME: train.py
+
+# DEVELOPED BY: Vigneshwar Ravichandar, Moulishankar M R
+
+# TOPICS: Multiclass Classification, Machine Learning, TensorFlow
+
+# DISABLE TENSORFLOW DEBUG INFORMATION
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+print("TensorFlow Debugging Information is hidden.")
 
 # IMPORTING REQUIRED MODULES
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from tensorflow.keras.models import load_model
+import tensorflow as tf
+
+print(f"TensorFlow version: {tf.__version__}")
+
+DATASET_PATH = 'data/custData.csv'
+MODEL_PATH = './model/custDataModel'
 
 # DATA PREPROCESSING
-data = pd.read_csv("data/custData.csv")
+data = pd.read_csv(DATASET_PATH)
+print(data.describe())
+
 x = data.iloc[:,[4,5,6,7,8,9,10]].values
 y = data.iloc[:,11].values
 
 # OPENING THE TRAINED MODEL
-model = load_model('./model/custDataModel')
+model = tf.keras.models.load_model(MODEL_PATH)
 
 # GETTING AND PROCESSING DATA FROM USER
 interests = ["Technology","Politics","Food","Education","Media","Travel","Medicine"]
@@ -27,7 +40,6 @@ for i in range(len(interests)):
     user_interests.append(val)
 
 categories = ["Young Adult","Engineering Student","Medical Student","Teacher","Mature (40+)","Travelophilic","Media Addicted"]
-res = model.predict([user_interests])
-res = np.argmax(res, axis=None, out=None)
+res = model.predict_classes([user_interests])
 print("The person may be a "+categories[int(res)]+" type of audience.")
 
