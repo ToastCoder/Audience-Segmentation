@@ -1,6 +1,6 @@
 # AUDIENCE SEGMENTATION
 
-# FILE NAME: train.py
+# FILE NAME: test.py
 
 # DEVELOPED BY: Vigneshwar Ravichandar, Moulishankar M R
 
