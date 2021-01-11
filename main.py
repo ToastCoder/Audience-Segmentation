@@ -6,14 +6,6 @@
 
 # TOPICS: Regression, Machine Learning, TensorFlow
 
-# IMPORTING REQUIRED MODULES
-import os
-import argparse
-
-# DISABLING TENSORFLOW DEBUGGING INFORMATION
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
-print("TensorFlow Debugging Information is hidden.")
-
 # FUNCTION TO CONVERT STR INPUT TO BOOL
 def strBool(v):
     if isinstance(v, bool):
@@ -37,6 +29,14 @@ def parse():
 # MAIN FUNCTION
 if __name__ == "__main__":
 
+    # IMPORTING REQUIRED MODULES
+    import os
+    import argparse
+
+    # DISABLING TENSORFLOW DEBUGGING INFORMATION
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+    print("TensorFlow Debugging Information is hidden.")
+    
     args = parse()
 
     if (args.install_requirements):
