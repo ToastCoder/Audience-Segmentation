@@ -6,10 +6,6 @@
 
 # TOPICS: Multiclass Classification, Machine Learning, TensorFlow
 
-# DISABLE TENSORFLOW DEBUG INFORMATION
-import os
-
-
 # IMPORTING REQUIRED MODULES
 import numpy as np
 import pandas as pd
