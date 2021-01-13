@@ -3,7 +3,9 @@
 ### About:
 
 A basic replica of youtube algorithm! Classifies the viewers into several groups based on their interests. Implemented with TensorFlow.  
+
 The code collects the amount of videos watched in particular category by any person from the dataset and gets the corresponding labels and classifies the type of audience for user defined person in train.py. Useful for classifying audience based on their interests and personalizing ads for each type of audience type.  
+
 Model accuracy of 95-100% is achieved while testing.
 
 ### Supported Operating Systems:  
@@ -57,4 +59,10 @@ python3 main.py --test=True
   
 * `-req` (or) `--install_requirements` - Used to install the required dependancies.
   * **Argument type:** bool  
-  * **Parameter type:** Optional
+  * **Parameter type:** Optional  
+
+### Images:  
+![img1](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/img1.png)  
+
+                              *Screenshot mentioning the training command*
+
