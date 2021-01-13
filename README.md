@@ -2,11 +2,17 @@
 
 ### About:
 
-A basic replica of youtube algorithm! Classifies the viewers into several groups based on their interests. Implemented with TensorFlow.
-
-The code collects the amount of videos watched in particular category by any person from the dataset and gets the corresponding labels and classifies the type of audience for user defined person in train.py. Useful for classifying audience based on their interests and personalizing ads for each type of audience type.
-
+A basic replica of youtube algorithm! Classifies the viewers into several groups based on their interests. Implemented with TensorFlow.  
+The code collects the amount of videos watched in particular category by any person from the dataset and gets the corresponding labels and classifies the type of audience for user defined person in train.py. Useful for classifying audience based on their interests and personalizing ads for each type of audience type.  
 Model accuracy of 95-100% is achieved while testing.
+
+### Supported Operating Systems:  
+Runs on Windows, Linux and MacOS
+
+### Tested with:  
+1. Python 3.8.5 64-bit  
+2. TensorFlow 2.4.0  
+3. Pop OS 20.04 LTS  
 
 ### Developed by:  
 [Vigneshwar Ravichandar](https://github.com/ToastCoder)  
@@ -28,6 +34,7 @@ Model accuracy of 95-100% is achieved while testing.
 4. Education  
 5. Media  
 6. Travel  
+7. Medicine  
 
-7. Medicine
+
 
