@@ -1,6 +1,6 @@
 # AUDIENCE SEGMENTATION
 
-# FILE NAME: train.py
+# FILE NAME: visualize.py
 
 # DEVELOPED BY: Vigneshwar Ravichandar, Moulishankar M R
 
@@ -18,3 +18,20 @@ os.system('cd ..')
 
 DATASET_PATH = 'data/custData.csv'
 MODEL_PATH = './model/custDataModel'
+
+# DATA SEGMENTATION
+data = pd.read_csv(DATASET_PATH)
+print(data.describe())
+
+x = data.iloc[:,[4,5,6,7,8,9,10]].values
+y = data.iloc[:,11].values
+
+# SPLITTING THE MAIN DATA INTO TRAINING AND VALIDATION DATA
+x_train, x_val, y_train, y_val = train_test_split(x, y, test_size = 0.1, random_state = 0)
+
+# OPENING THE TRAINED MODEL
+model = tf.keras.models.load_model(MODEL_PATH)
+
+# CALCULATING THE ACCURACY
+score = model.evaluate(x_val, y_val)
+print(f"Model Accuracy: {round(score[1]*100,4)}")
