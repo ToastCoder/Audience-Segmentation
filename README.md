@@ -36,5 +36,25 @@ Runs on Windows, Linux and MacOS
 6. Travel  
 7. Medicine  
 
+### Execution Instructions:  
+Execute the following command in the terminal to run with default procedure.  
+```python
+python3 main.py --test=True
+```
 
+### Command Line Arguments:
+* `-tr` (or) `--train` - Used to train the Neural Network.  
+  * **Argument type:** bool  
+  * **Parameter type:** Optional  
 
+* `-t` (or) `--test` - Used to test the Neural Network with custom inputs.
+  * **Argument type:** bool  
+  * **Parameter type:** Mandatory 
+  
+* `-v` (or) `--visualize` - Used to vizualize the metrics.
+  * **Argument type:** bool  
+  * **Parameter type:** Optional
+  
+* `-req` (or) `--install_requirements` - Used to install the required dependancies.
+  * **Argument type:** bool  
+  * **Parameter type:** Optional
