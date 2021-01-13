@@ -54,7 +54,7 @@ callback = Callback()
 
 # TRAINING THE MODEL
 model.compile(loss = 'sparse_categorical_crossentropy' , optimizer = 'adam' , metrics = ['accuracy'] )
-history = model.fit(x_train, y_train, epochs = 20, batch_size = 2, callbacks = [callback], validation_data = (x_val, y_val))
+history = model.fit(x_train, y_train, epochs = 50, batch_size = 5, callbacks = [callback], validation_data = (x_val, y_val))
 
 # PLOTTING THE GRAPH FOR TRAIN-LOSS AND VALIDATION-LOSS
 plt.figure(0)
