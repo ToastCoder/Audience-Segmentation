@@ -66,3 +66,7 @@ python3 main.py --test=True
 
                               *Screenshot mentioning the training command*
 
+![img2](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/img2.png)  
+
+                              *Screenshot mentioning the testing command*
+

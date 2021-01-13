@@ -38,6 +38,7 @@ for i in range(len(interests)):
     user_interests.append(val)
 
 categories = ["Young Adult","Engineering Student","Medical Student","Teacher","Mature (40+)","Travelophilic","Media Addicted"]
-res = model.predict_classes([user_interests])
+res = model.predict([user_interests])
+res = np.argmax(res,axis = 1)
 print("The person may be a "+categories[int(res)]+" type of audience.")
 
