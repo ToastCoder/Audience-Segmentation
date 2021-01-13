@@ -43,39 +43,3 @@ The code collects the amount of videos watched in particular category by any per
 
 7. Medicine
 
-### Execution Instructions:
-
-### Windows without WSL:
-
-1. Install the required packages.
-
-2. Execute train.py to retrain the model again.
-
-3. Execute test.py to test the model for executing the algorithm with user defined data.
-
-### Windows with WSL / MacOS / Linux:
-
-There is a script autorun.sh for automating all the process.
-
-1. Execute the autorun.sh script in terminal.
-
-2. Press Y for executing the script.
-
-![shell1](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image1.png)
-
-3. Enter password if asked.
-
-4. This will install all the dependencies and runs the code in order.
-
-5. Press Y for retraining the model. Else press N.
-
-![shell2](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image2.png)
-
-7. For classifying a particular data. Follow the wizard by entering the user's number of watched videos per category.
-
-![shell3](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image3.png)
-
-8. The algorithm will classify the type of audience for the mentioned person. Enjoy!
-
-![shell4](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image4.png)
-
