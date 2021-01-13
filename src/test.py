@@ -7,12 +7,15 @@
 # TOPICS: Multiclass Classification, Machine Learning, TensorFlow
 
 # IMPORTING REQUIRED MODULES
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
 print(f"TensorFlow version: {tf.__version__}")
+
+os.system('cd ..')
 
 DATASET_PATH = 'data/custData.csv'
 MODEL_PATH = './model/custDataModel'
@@ -35,6 +38,7 @@ for i in range(len(interests)):
     user_interests.append(val)
 
 categories = ["Young Adult","Engineering Student","Medical Student","Teacher","Mature (40+)","Travelophilic","Media Addicted"]
-res = model.predict_classes([user_interests])
+res = model.predict([user_interests])
+res = np.argmax(res,axis = 1)
 print("The person may be a "+categories[int(res)]+" type of audience.")
 

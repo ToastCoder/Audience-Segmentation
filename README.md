@@ -2,80 +2,71 @@
 
 ### About:
 
-A basic replica of youtube algorithm! Classifies the viewers into several groups based on their interests. Implemented with TensorFlow
+A basic replica of youtube algorithm! Classifies the viewers into several groups based on their interests. Implemented with TensorFlow.  
 
-The code collects the amount of videos watched in particular category by any person from the dataset and gets the corresponding labels and classifies the type of audience for user defined person in train.py. Useful for classifying audience based on their interests and personalizing ads for each type of audience type.
+The code collects the amount of videos watched in particular category by any person from the dataset and gets the corresponding labels and classifies the type of audience for user defined person in train.py. Useful for classifying audience based on their interests and personalizing ads for each type of audience type.  
 
-### Developed by:
-[Vigneshwar Ravichandar](https://github.com/ToastCoder)
+Model accuracy of 95-100% is achieved while testing.
 
-[Moulishankar M R](https://github.com/Moulishankar10)
+### Supported Operating Systems:  
+Runs on Windows, Linux and MacOS
 
-### List of Classes:
+### Tested with:  
+1. Python 3.8.5 64-bit  
+2. TensorFlow 2.4.0  
+3. Pop OS 20.04 LTS  
 
-1. Young adult ( if the value of 'res' in test.py is '[0]' )
+### Developed by:  
+[Vigneshwar Ravichandar](https://github.com/ToastCoder)  
+[Moulishankar M R](https://github.com/Moulishankar10)  
 
-2. Engineering Student ( if the value of 'res' in test.py is '[1]' )
+### List of Classes:  
+1. Young adult ( if the value of 'res' in test.py is '[0]' )  
+2. Engineering Student ( if the value of 'res' in test.py is '[1]' )  
+3. Medical Student ( if the value of 'res' in test.py is '[2]' )  
+4. Teachers ( if the value of 'res' in test.py is '[3]' )  
+5. Adults ( if the value of 'res' in test.py is '[4]' )  
+6. Travellophilic ( if the value of 'res' in test.py is '[5]' )  
+7. Media Freak ( if the value of 'res' in test.py is '[6]' )  
 
-3. Medical Student ( if the value of 'res' in test.py is '[2]' )
+### List of Features:  
+1. Technology  
+2. Politics  
+3. Food  
+4. Education  
+5. Media  
+6. Travel  
+7. Medicine  
 
-4. Teachers ( if the value of 'res' in test.py is '[3]' )
+### Execution Instructions:  
+Execute the following command in the terminal to run with default procedure.  
+```python
+python3 main.py --test=True
+```
 
-5. Adults ( if the value of 'res' in test.py is '[4]' )
+### Command Line Arguments:
+* `-tr` (or) `--train` - Used to train the Neural Network.  
+  * **Argument type:** bool  
+  * **Parameter type:** Optional  
 
-6. Travelling kinda person ( if the value of 'res' in test.py is '[5]' )
+* `-t` (or) `--test` - Used to test the Neural Network with custom inputs.
+  * **Argument type:** bool  
+  * **Parameter type:** Mandatory 
+  
+* `-v` (or) `--visualize` - Used to vizualize the metrics.
+  * **Argument type:** bool  
+  * **Parameter type:** Optional
+  
+* `-req` (or) `--install_requirements` - Used to install the required dependancies.
+  * **Argument type:** bool  
+  * **Parameter type:** Optional  
 
-7. Media Freak ( if the value of 'res' in test.py is '[6]' )
+### Images:  
+![img1](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/img1.png)  
 
-### List of Features: 
+                              *Screenshot mentioning the training command*
 
-1. Technology
+![img2](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/img2.png)  
 
-2. Politics
-
-3. Food
-
-4. Education
-
-5. Media
-
-6. Travel
-
-7. Medicine
-
-### Execution Instructions:
-
-### Windows without WSL:
-
-1. Install the required packages.
-
-2. Execute train.py to retrain the model again.
-
-3. Execute test.py to test the model for executing the algorithm with user defined data.
-
-### Windows with WSL / MacOS / Linux:
-
-There is a script autorun.sh for automating all the process.
-
-1. Execute the autorun.sh script in terminal.
-
-2. Press Y for executing the script.
-
-![shell1](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image1.png)
-
-3. Enter password if asked.
-
-4. This will install all the dependencies and runs the code in order.
-
-5. Press Y for retraining the model. Else press N.
-
-![shell2](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image2.png)
-
-7. For classifying a particular data. Follow the wizard by entering the user's number of watched videos per category.
-
-![shell3](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image3.png)
-
-8. The algorithm will classify the type of audience for the mentioned person. Enjoy!
-
-![shell4](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/image4.png)
+                              *Screenshot mentioning the testing command*
 
