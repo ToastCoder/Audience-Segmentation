@@ -2,7 +2,7 @@
 
 ### About:
 
-A basic replica of youtube algorithm! Classifies the viewers into several groups based on their interests. Implemented with TensorFlow
+A basic replica of youtube algorithm! Classifies the viewers into several groups based on their interests. Implemented with TensorFlow.
 
 The code collects the amount of videos watched in particular category by any person from the dataset and gets the corresponding labels and classifies the type of audience for user defined person in train.py. Useful for classifying audience based on their interests and personalizing ads for each type of audience type.
 
@@ -23,7 +23,7 @@ The code collects the amount of videos watched in particular category by any per
 
 5. Adults ( if the value of 'res' in test.py is '[4]' )
 
-6. Travelling kinda person ( if the value of 'res' in test.py is '[5]' )
+6. Travellophilic ( if the value of 'res' in test.py is '[5]' )
 
 7. Media Freak ( if the value of 'res' in test.py is '[6]' )
 
