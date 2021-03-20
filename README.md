@@ -12,9 +12,9 @@ Model accuracy of 95-100% is achieved while testing.
 Runs on Windows, Linux and MacOS
 
 ### Tested with:  
-1. Python 3.8.5 64-bit  
-2. TensorFlow 2.4.0  
-3. Pop OS 20.04 LTS  
+1. Python 3.8.6 64-bit  
+2. TensorFlow 2.4.1  
+3. Pop OS 20.10 LTS  
 
 ### Developed by:  
 [Vigneshwar Ravichandar](https://github.com/ToastCoder)  
@@ -48,6 +48,7 @@ python3 main.py --test=True
 * `-tr` (or) `--train` - Used to train the Neural Network.  
   * **Argument type:** bool  
   * **Parameter type:** Optional  
+  * **Default value:** False
 
 * `-t` (or) `--test` - Used to test the Neural Network with custom inputs.
   * **Argument type:** bool  
@@ -56,10 +57,33 @@ python3 main.py --test=True
 * `-v` (or) `--visualize` - Used to vizualize the metrics.
   * **Argument type:** bool  
   * **Parameter type:** Optional
+  * **Default value:** False
   
 * `-req` (or) `--install_requirements` - Used to install the required dependancies.
   * **Argument type:** bool  
   * **Parameter type:** Optional  
+  * **Default value:** False
+
+* `-e` (or) `--epochs` - Used for mentioning the number of epochs for the model.
+  * **Argument type:** int
+  * **Parameter type:** Optional
+  * **Default value:** 50
+
+* `-bs` (or) `--batch_size` - Used for mentioning the batch size for the model.
+  * **Argument type:** int
+  * **Parameter type:** Optional
+  * **Default value:** 5
+
+* `-l` (or) `--loss` - Used for mentioning the loss function for the model.
+  * **Argument type:** str
+  * **Parameter type:** Optional
+  * **Default value:** "sparse_categorical_crossentropy"
+
+* `-op` (or) `--optimizer` - Used for mentioning the optimizer for the model.
+  * **Argument type:** str
+  * **Parameter type:** Optional
+  * **Default value:** "adam"
+
 
 ### Images:  
 ![img1](https://github.com/ToastCoder/Audience-Segmentation/blob/master/images/img1.png)  
