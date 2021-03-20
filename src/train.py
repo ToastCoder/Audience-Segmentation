@@ -16,8 +16,6 @@ import matplotlib.pyplot as plt
 
 print(f"TensorFlow version: {tf.__version__}")
 
-os.system('cd ..')
-
 DATASET_PATH = 'data/custData.csv'
 MODEL_PATH = './model/custDataModel'
 

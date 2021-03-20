@@ -48,7 +48,7 @@ def parse():
     parser.add_argument('-v','--visualize', 
                         type = strBool, 
                         help = description[3],
-                        required = True)
+                        required = False)
 
     parser.add_argument('-t','--test', 
                         type = strBool, 
