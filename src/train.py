@@ -20,7 +20,6 @@ os.system('cd ..')
 
 DATASET_PATH = 'data/custData.csv'
 MODEL_PATH = './model/custDataModel'
-ACC_THRESHOLD = 0.99
 
 # DATA SEGMENTATION
 data = pd.read_csv(DATASET_PATH)
@@ -43,14 +42,10 @@ def custDataModel():
     model.add(tf.keras.layers.Dense(7, activation = 'softmax'))
     return model
 
-class Callback(tf.keras.callbacks.Callback): 
-    def on_epoch_end(self, epoch, logs={}): 
-        if(logs.get('accuracy') > ACC_THRESHOLD):   
-            print("Reached Threshold Accuracy, Stopping Training.")   
-            self.model.stop_training = True
+
 
 model = custDataModel()
-callback = Callback()
+
 
 # TRAINING THE MODEL
 model.compile(loss = 'sparse_categorical_crossentropy' , optimizer = 'adam' , metrics = ['accuracy'] )
