@@ -1,3 +1,5 @@
+#-------------------------------------------------------------------------------------------------------------------------------
+
 # AUDIENCE SEGMENTATION
 
 # FILE NAME: main.py
@@ -5,6 +7,8 @@
 # DEVELOPED BY: Vigneshwar Ravichandar, Moulishankar M R
 
 # TOPICS: Regression, Machine Learning, TensorFlow
+
+#-------------------------------------------------------------------------------------------------------------------------------
 
 # FUNCTION TO CONVERT STR INPUT TO BOOL
 def strBool(v):
