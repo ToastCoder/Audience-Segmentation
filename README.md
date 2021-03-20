@@ -14,7 +14,7 @@ Runs on Windows, Linux and MacOS
 ### Tested with:  
 1. Python 3.8.6 64-bit  
 2. TensorFlow 2.4.1  
-3. Pop OS 20.10 LTS  
+3. Pop OS 20.10  
 
 ### Developed by:  
 [Vigneshwar Ravichandar](https://github.com/ToastCoder)  
