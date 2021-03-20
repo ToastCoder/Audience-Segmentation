@@ -1,3 +1,5 @@
+#-------------------------------------------------------------------------------------------------------------------------------
+
 # AUDIENCE SEGMENTATION
 
 # FILE NAME: test.py
@@ -5,6 +7,8 @@
 # DEVELOPED BY: Vigneshwar Ravichandar, Moulishankar M R
 
 # TOPICS: Multiclass Classification, Machine Learning, TensorFlow
+
+#-------------------------------------------------------------------------------------------------------------------------------
 
 # IMPORTING REQUIRED MODULES
 import os
@@ -15,14 +19,13 @@ import tensorflow as tf
 
 print(f"TensorFlow version: {tf.__version__}")
 
-os.system('cd ..')
-
 DATASET_PATH = 'data/custData.csv'
 MODEL_PATH = './model/custDataModel'
 
 # DATA PREPROCESSING
 data = pd.read_csv(DATASET_PATH)
-print(data.describe())
+print("Dataset Description:\n",data.describe())
+print("Dataset Head\n",data.head())
 
 x = data.iloc[:,[4,5,6,7,8,9,10]].values
 y = data.iloc[:,11].values
