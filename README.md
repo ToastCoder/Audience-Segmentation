@@ -8,13 +8,24 @@ The code collects the amount of videos watched in particular category by any per
 
 Model accuracy of 95-100% is achieved while testing.
 
-### Supported Operating Systems:  
-Runs on Windows, Linux and MacOS
+### Tested with: 
+#### Operating System:
+  * Pop OS 20.10 
+#### Python version:
+  * Python 3.8.6 64-bit 
+#### Packages:
+  * tensorflow 2.4.1
+  * numpy 1.19.5
+  * pandas 1.2.4
+  * matplotlib 3.4.2
+  * scipy 1.6.3
+  * sklearn 0.24.2
 
-### Tested with:  
-1. Python 3.8.6 64-bit  
-2. TensorFlow 2.4.1  
-3. Pop OS 20.10  
+### Explanation: 
+Classification is the concept used here. Classification refers to a predictive modeling problem where a class label is predicted for a given example of input data. Here the model is trained with data of Audience where the model understands the relation between the known features (X) and their respective classes (Y). The trained model classifies the audience into various classes (Y) based on their features (X) 
+
+### About the Neural Network:
+A typical form of Artificial Neural Network (ANN) is used here. The layers of the Neural Network Architecture is as follows... 
 
 ### Developed by:  
 [Vigneshwar Ravichandar](https://github.com/ToastCoder)  
