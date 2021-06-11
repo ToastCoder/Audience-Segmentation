@@ -26,6 +26,25 @@ Classification is the concept used here. Classification refers to a predictive m
 
 ### About the Neural Network:
 A typical form of Artificial Neural Network (ANN) is used here. The layers of the Neural Network Architecture is as follows... 
+```
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 14)                112       
+_________________________________________________________________
+dense_1 (Dense)              (None, 16)                240       
+_________________________________________________________________
+dense_2 (Dense)              (None, 16)                272       
+_________________________________________________________________
+dense_3 (Dense)              (None, 16)                272       
+_________________________________________________________________
+dense_4 (Dense)              (None, 7)                 119       
+=================================================================
+Total params: 1,015
+Trainable params: 1,015
+Non-trainable params: 0
+```
 
 ### Developed by:  
 [Vigneshwar Ravichandar](https://github.com/ToastCoder)  
