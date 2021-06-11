@@ -72,14 +72,12 @@ def custDataModel():
     model.add(tf.keras.layers.Dense(7, activation = 'softmax'))
     return model
 
-# INITITIALIZING THE CALLBACK
-early_stopping = tf.keras.callbacks.EarlyStopping(monitor = 'accuracy', mode = 'max')
-
 model = custDataModel()
+model.summary()
 
 # TRAINING THE MODEL
 model.compile(loss = args.loss , optimizer = args.optimizer , metrics = ['accuracy'] )
-history = model.fit(x_train, y_train, epochs = args.epochs, batch_size = args.batch_size, callbacks = early_stopping, validation_data = (x_val, y_val))
+history = model.fit(x_train, y_train, epochs = args.epochs, batch_size = args.batch_size, validation_data = (x_val, y_val))
 
 # PLOTTING THE GRAPH FOR TRAIN-LOSS AND VALIDATION-LOSS
 plt.figure(0)
