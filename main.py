@@ -38,7 +38,7 @@ def parse():
     parser.add_argument('-tr','--train',
                         type = strBool, 
                         help = description[1], 
-                        default = "False")
+                        default = False)
 
     parser.add_argument('-req','--install_requirements', 
                         type = strBool, 
@@ -100,3 +100,6 @@ if __name__ == "__main__":
 
     if (args.test):
         os.system(f'python3 src/test.py --epochs={args.epochs} --batch_size={args.batch_size} --loss={args.loss} --optimizer={args.optimizer}')
+
+    if(args.visualize):
+        os.system('python3 src/visualize.py')
